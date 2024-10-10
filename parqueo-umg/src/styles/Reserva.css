@@ -1,0 +1,14 @@
+.reserva-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #e6ffe6;
+    height: 100vh;
+}
+
+h1 {
+    color: #007bff;
+}
+
+p {
+    font-size: 18px;
+}

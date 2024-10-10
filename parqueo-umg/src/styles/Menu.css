@@ -1,0 +1,163 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.menu-header {
+    width: 100%; /* Mantener la barra completa con el ancho total de la página */
+    height: 50px; /* Mantiene la altura fija */
+    background-color: #007bff; /* Color azul */
+    padding: 0 20px; /* Agrega padding para espaciar elementos internos */
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centrar el título de 'Menú' */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu-header h1 {
+    font-size: 24px;
+    color: white; /* Color blanco para la palabra Menú */
+    margin: 0;
+}
+
+.settings-icon {
+    position: absolute;
+    right: 50px; /*  posicion */
+    font-size: 24px;
+    color: #ff8ad8;
+    cursor: pointer;
+    
+}
+
+.settings-icon:hover {
+    color: #ff60a3;
+}
+
+
+.menu-sidebar {
+    background-color: #5af364;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    top: 50px; 
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.menu-user-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-user-profile i {
+    font-size: 100px;
+    color: #007bff;
+}
+
+.user-name {
+    
+    font-size: 22px; /* Incrementar el tamaño para mejor visibilidad */
+    color: #4c3434 !important;  /* Asegurar que el color sea blanco */
+    font-weight: bold; /* Hacer que el texto sea más grueso */
+    margin-bottom: 10px;
+    text-align: center;
+
+
+}
+
+
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-nav button {
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* Eliminar el borde negro (outline) cuando el botón o enlace estén en foco */
+a, button {
+    outline: none;
+}
+
+/* agregarlo solo para los botones dentro de enlaces */
+a button {
+    outline: none;
+}
+
+
+
+
+.menu-nav button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.menu-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px; /* Ajuste para que no se superponga con el header */
+    margin-left: 270px;
+}
+
+.menu-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.car-image {
+    background-image: url('../assets/menu.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 940px;
+    height: 470px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff8ad8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}

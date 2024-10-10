@@ -1,0 +1,14 @@
+.reportes-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff5e6;
+    height: 100vh;
+}
+
+h1 {
+    color: #007bff;
+}
+
+p {
+    font-size: 18px;
+}
